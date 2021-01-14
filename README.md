@@ -4,3 +4,5 @@ a set of fake "your computer is blocked!!!" screens. (THIS IS AN INSIDE JOKE FOR
 NOTE: The coding is usually very bad, and some depricated tags are used. I know.
 
 Also these look bad intentionally.
+
+Also, if someone *somehow* finds this and you want to add a screen or change something, just make a pull request, i'll probably merge it lol.
