@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<style>
+html {
+  background-image: linear-gradient(darkblue, black);
+  background-size: 100vw 100vh;
+  text-align: center;
+  color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  cursor: none;
+}
+	</style>
+  </head>
+  <body>
+	<br>
+	<br>
+	<br>
+	<p>Bad choices, cause students to lose their computers. Be smart. Make good choices.</p>
+	<button id="button" onclick="openFullscreen();">Open Fullscreen</button>
+	<script>
+var elem = document.documentElement;
+var x = document.getElementById("button");
+function openFullscreen() {
+  x.style.display = "none";
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+	</script>
+  </body>
+</html>

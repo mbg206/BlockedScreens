@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>   
+body {
+  background-color: green;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  font-family: Monospace;
+  cursor: none;
+  height: 100vh;
+  overflow: hidden;
+}
+.left {
+  background-color: black;
+  position: absolute;
+  left: 0px;
+  width: 12.5vw;
+  height: 100vh;
+  z-index: 1;
+}
+.right {
+  background-color: black;
+  position: absolute;
+  right: 0px;
+  width: 12.5vw;
+  height: 100vh;
+  z-index: 1;
+}
+    </style>
+  </head>
+  <body>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div>Emergency Alert System</div>
+    <br>
+    <br>
+    <br>
+    <div>Alert</div>
+    <br>
+    <br>
+    <div>Your Computer has been Disabled.</div>
+    <button id="button" onclick="openFullscreen();">Open Fullscreen</button>
+	<script>
+var elem = document.documentElement;
+var x = document.getElementById("button");
+function openFullscreen() {
+  x.style.display = "none";
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+	</script>
+  </body>
+</html>

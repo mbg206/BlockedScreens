@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+.top {
+  text-align: center;
+  background-repeat: repeat-x;
+  background-image: url("https://media2.giphy.com/media/IccveX7wLJPaSLjn0h/giphy.gif");
+  background-size: 100px 100px;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+}
+html {
+  cursor: none;
+}
+  </style>
+  </head>
+  <body>
+  <div class="top">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Your computer has been blocked!!!!!</h1>
+  <img src="https://i.ytimg.com/vi/R-hEbFpD83o/hqdefault.jpg" alt="block" style="width:300px;height:200px;"><img src="https://cdn2.iconfinder.com/data/icons/stomach-symptoms-glyph/64/154_constipation-lock-latch-512.png" alt="lock" style="width:200px;height:200px;"><img src="https://farm1.staticflickr.com/649/21271274503_533f1c6fe0.jpg" alt="chain" style="width:300px;height:200px;">
+  <p>There is nothing you can do hahahahahahahahhahahahahah!!!!!</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mr._Smiley_Face.svg/2000px-Mr._Smiley_Face.svg.png" alt="chain" style="width:200px;height:200px;"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/emoji-one/104/thumbs-up-sign_1f44d.png" alt="smile" style="width:200px;height:200px;">
+  <p>Hahaahahahaaahahhhahhahahhahahahaahahahaahahah!!!!!!!!!</p>
+  </div>
+  <button id="button" onclick="openFullscreen();">Open Fullscreen</button>
+  <p class="bottom">Copyright© poopy studios™ 2019©©©</p>
+	<script>
+var elem = document.documentElement;
+var x = document.getElementById("button");
+function openFullscreen() {
+  x.style.display = "none";
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+	</script>
+  </body>
+</html>
